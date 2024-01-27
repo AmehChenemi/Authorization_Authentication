@@ -112,5 +112,4 @@ const generateDynamicEmail=( link,firstName)=> {
     `
   }
   
-  module.exports = 
-    generateDynamicEmail
+  module.exports = generateDynamicEmail

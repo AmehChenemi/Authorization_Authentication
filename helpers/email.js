@@ -1,7 +1,7 @@
 const nodemailer =require ('nodemailer')
 
 const dotenv = require('dotenv').config()
-const sendEmail = async(options)=>{
+const sendMail = async(options)=>{
     const transporter = nodemailer.createTransport({
     service : process.env.service,
     auth:{
@@ -21,4 +21,4 @@ const sendEmail = async(options)=>{
     await transporter.sendMail(mailOption)
 }
 
-module.exports = sendEmail
+module.exports = sendMail
